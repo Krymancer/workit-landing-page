@@ -13,7 +13,8 @@ import Button from "@src/components/Button";
 const Home: Component = () => {
   return (
     <main>
-      <div class=" text-white py-8 px-4 gap-8 flex flex-col bg-hero bg-no-repeat bg-ghost-white">
+      <div class=" text-white py-8 px-4 gap-8 flex flex-col
+                bg-dark-purple relative h-[500px]">
         <header class="flex flex-row justify-between items-center">
           <LogoLight />
           <Button label="Apply for access" secondary />
@@ -24,10 +25,14 @@ const Home: Component = () => {
             <Button label="Learn More" />
           </div>
         </div>
-        <img src={HeroImage} alt="Hero Image" class="w-full" />
+        <div class="flex items-center w-full justify-center">
+          <img src={HeroImage} alt="Hero Image" class="lg:w-[44rem] md:w-[29rem] w-[18rem] z-20" />
+        </div>
+      </div>
+      <div class="md:bg-hero-lg bg-hero-sm sm:bg-hero-md bg-no-repeat bg-bottom h-20 bg-cover bg-ghost-white">
       </div>
 
-      <div class="flex flex-col gap-10 bg-items bg-cover">
+      <div class="flex flex-col gap-10 relative bg-ghost-white lg:flex-row lg:pt-[14rem]  lg:pb-20 lg:px-30 ">
         <div class="flex flex-col gap-6 justify-center items-center">
           <span class="font-fraunces rounded-full border w-12 h-12 flex items-center justify-center border-black text-xl">1</span>
           <div class="flex flex-col gap-4 items-center text-center px-4">
@@ -53,8 +58,11 @@ const Home: Component = () => {
         </div>
       </div>
 
-      <div>
-        <img src={Founder} alt="Founder" class="-z-10 relative" />
+      <div class="md:bg-mid-lg bg-mid-sm sm:bg-mid-md bg-no-repeat bg-bottom h-20 bg-cover bg-white">
+      </div>
+
+      <div class="pt-24">
+        <img src={Founder} alt="Founder" class="-z-10 relative lg:w-[28rem] lg:h-[28rem]" />
         <div class="flex flex-col gap-6 text-center bg-dark-purple -mt-20 z-10 p-8">
           <div class="flex flex-col gap-4">
           <h2 class="font-fraunces text-[2rem] font-semibold text-white">Be the first to test</h2>
