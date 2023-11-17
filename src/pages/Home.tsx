@@ -9,6 +9,7 @@ import InstagramIcon from '@assets/images/icon-instagram.svg'
 import Founder from '@assets/images/image-founder.webp';
 
 import Button from "@src/components/Button";
+import Item from "@src/components/Item";
 
 const Home: Component = () => {
   return (
@@ -34,44 +35,24 @@ const Home: Component = () => {
       </div>
 
 
-      <div class="flex flex-col gap-10 relative bg-ghost-white lg:flex-row pt-32  lg:pb-20 lg:px-30 md:pt-64 lg:pt-96">
-        <div class="flex flex-col gap-6 justify-center items-center">
-          <span class="font-fraunces rounded-full border w-12 h-12 flex items-center justify-center border-black text-xl">1</span>
-          <div class="flex flex-col gap-4 items-center text-center px-4">
-            <h2 class="font-bold font-fraunces text-[1.75rem]">Actionable Insights</h2>
-            <p class="text-davys-grey font-manrope">Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-6 justify-center items-center">
-          <span class="font-fraunces rounded-full border w-12 h-12 flex items-center justify-center border-black text-xl">2</span>
-          <div class="flex flex-col gap-4 items-center text-center px-4">
-            <h2 class="font-bold font-fraunces text-[1.75rem]">Data-driven decisions</h2>
-            <p class="text-davys-grey font-manrope">Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-6 justify-center items-center">
-          <span class="font-fraunces rounded-full border w-12 h-12 flex items-center justify-center border-black text-xl">3</span>
-          <div class="flex flex-col gap-4 items-center text-center px-4">
-            <h2 class="font-bold font-fraunces text-[1.75rem]">Always affordable</h2>
-            <p class="text-davys-grey font-manrope">Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.</p>
-          </div>
-        </div>
+      <div class="flex flex-col gap-10 relative bg-ghost-white lg:flex-row pt-32  lg:pb-20 lg:px-30 md:pt-64 lg:pt-64 lg:px-6">
+        <Item number={1} title="Actionable Insights" content="Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics." />
+        <Item number={2} title="Data-driven decisions" content="Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data." />
+        <Item number={3} title="Always affordable" content="Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees." />
       </div>
 
       <div class="md:bg-mid-lg bg-mid-sm sm:bg-mid-md bg-no-repeat bg-bottom h-20 bg-cover bg-white">
       </div>
 
-      <div class="pt-24 w-full flex items-center lg:px-10">
-        <img src={Founder} alt="Founder" class="-z-10 relative lg:w-[28rem] lg:h-[28rem]" />
-        <div class="flex flex-col gap-6 text-center bg-dark-purple -mt-20 z-10 p-8 lg:mt-32 lg:-ml-20">
-          <div class="flex flex-col gap-4">
-            <h2 class="font-fraunces text-[2rem] font-semibold text-white lg:self-start">Be the first to test</h2>
-            <p class="text-white font-manrope text-center lg:text-start">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I&apos;ll be in touch to schedule a call.</p>
+      <div class="pt-24 w-full flex items-center lg:px-10 md:-mt-36 md:px-8 md:mb-20">
+        <img src={Founder} alt="Founder" class="-z-10 relative lg:w-[28rem] lg:h-[28rem] md:w-[16rem] md:h-[16rem]" />
+        <div class="flex flex-col gap-6 text-center bg-dark-purple -mt-20 z-10 p-8 lg:mt-32 lg:-ml-20 md:-ml-24 md:mt-[19rem]">
+          <div class="flex flex-col gap-4" >
+            <h2 class="font-fraunces text-[2rem] font-semibold text-white lg:self-start md:self-start">Be the first to test</h2>
+            <p class="text-white font-manrope text-center lg:text-start md:text-start">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I&apos;ll be in touch to schedule a call.</p>
           </div>
-          <div class="w-full lg:w-fit lg:self-start">
-          <Button label="Apply for access" />
+          <div class="w-full lg:w-fit lg:self-start md:w-fit md:self-start">
+            <Button label="Apply for access" />
           </div>
         </div>
       </div>
