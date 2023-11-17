@@ -44,7 +44,7 @@ const Home: Component = () => {
       <div class="md:bg-mid-lg bg-mid-sm sm:bg-mid-md bg-no-repeat bg-bottom h-20 bg-cover bg-white">
       </div>
 
-      <div class="pt-24 w-full flex items-center lg:px-10 md:-mt-36 md:px-8 md:mb-20">
+      <div class="pt-24 w-full flex items-center lg:px-10 md:-mt-36 md:px-8 md:mb-20 lg:mt-0">
         <img src={Founder} alt="Founder" class="-z-10 relative lg:w-[28rem] lg:h-[28rem] md:w-[16rem] md:h-[16rem]" />
         <div class="flex flex-col gap-6 text-center bg-dark-purple -mt-20 z-10 p-8 lg:mt-32 lg:-ml-20 md:-ml-24 md:mt-[19rem]">
           <div class="flex flex-col gap-4" >
